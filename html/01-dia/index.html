@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--HEAD: Información para el navegador. El usuario no ve este contenido-->
+        <title>Mi primer HTML</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- BODY: Información que verá el usuario -->
+        <main>
+            <h1>Hola, esto es un título h1</h1>
+            <h2>Hola, esto es un título h2</h2>
+            <h3>Hola, esto es un título h3</h3>
+            <h4>Hola, esto es un título h4</h4>
+            <h5>Hola, esto es un título h6</h5>
+            <h6>Hola, esto es un título h6</h6>
+            <p>Hola, esto es un párrafo</p>
+            <p>Lorem <b>ipsum</b> <strong>dolor</strong> <i>sit</i> <em>amet</em> <strong><em>consectetur</em></strong> adipisicing elit. ❤️<br><br> <span style="color:tomato">Distinctio id</span> sit, <a href="https://www.google.com">sint</a> quis nisi recusandae dignissimos. Hic, odio non temporibus, <a href="contacto.html">harum</a> eligendi rem minima facilis, natus ducimus debitis explicabo! Enim?
+                    <img width="50" src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeghttps://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeg" alt="Una hamburguesa doble con queso y bacon y una guarnición de patatas"></p>
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeghttps://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeg" alt="Una hamburguesa doble con queso y bacon y una guarnición de patatas">
+        <!-- Se podrían añadir atributos height="" y width="" pero es mejor no hacerlo por el diseño responsive  -->
+        </main>
+    <div style="width: 200px; background-color:rgb(137, 188, 220)">
+    <!-- En realidad nunca tendríamos que escribir el style desde que podemos usar CSS-->
+        <img width="100%" src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeghttps://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeg" alt="Una hamburguesa doble con queso y bacon y una guarnición de patatas">
+        <!-- En este caso, el 100% del width se está refiriendo al ancho del div -->
+        <img width="100%" src="https://media.istockphoto.com/id/1188412964/es/foto/hamburguesa-con-queso-y-patatas-fritas.jpg?s=612x612&w=0&k=20&c=FaEH61wxBMYhFRu5nU9fVbbcum15OX-_tNdUuYd5iQQ=" alt="Otra hamburguesa deliciosa">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur, ea, facere quis iusto labore asperiores id voluptate nisi non dolores accusantium provident minus explicabo voluptates laborum soluta sapiente accusamus.</p>
+    
+    </div>
+    <aside>
+        <!-- Aparece abajo porque solo estoy definiedo el contenido de la barra lateral, dónde se va a ubicar y cómo se va a ver lo vamos a ver en CSS. Como desarrollador, leemos la etiqueta y sabemos más o menos qué contenido estamos modificando, qué debiera estar dentro de la etiqueta -->
+        <p>
+            Esto es una barra lateral
+        </p>
+    </aside>
+   
+<ul>
+<li>Comprar pan</li>
+<li>Comprar harina</li>
+<li>Comprar vegetales</li>
+</ul>
+<ol>
+    <li>Agua</li>
+    <li>Aceite</li>
+    <li>Sal</li>
+</ol>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Columna 01</th>
+        <th>Columna 02</th>
+        <th colspan="4">Columna 3</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+            Valor 1
+        </td>
+        <td>Valor 2</td>
+        <td>Icono 01</td>
+        <td>Icono 02</td>
+        <td colspan="2">Icono 3</td>
+    </tr>
+</tbody>
+
+    <tr>
+        <td>Valor</td>
+        <td>Valor</td>
+        <td>Valor</td>
+        <td>Valor</td>
+        <td>Valor</td>
+        <td>Valor</td>
+    </tr>
+<tfooter>
+    <td colspan="6"><center>Este es el footer</center></td>
+</tfooter>
+</table>
+
+<form action="#">
+    <p>Hola Mundo, aquí el formulario</p><div>
+   <label for="searchbox">Buscar</label> <input type="text" name="search" id="searchbox" placeholder="Busca aquí" autofocus></div>
+   <div><label for="age">Escribe tu edad</label><input type="number" name="age" id="age" min="18" max="99">
+    <div><label for="file">Manda un archivo</label></div><input type="file" name="" id="">
+   </div>
+   <div>
+    <label for="yes">Sí</label>
+    <input type="radio" name="input_radio" id="yes">
+
+    <label for="no">No</label>
+    <input type="radio" name="input_radio" id="no">
+</div>
+<div>
+    <label for="agua">Agua</label>
+    <input type="checkbox" name="check" id="agua">
+    <label for="sal">Sal</label>
+    <input type="checkbox" name="check" id="sal">
+    <label for="pimienta">Pimienta</label>
+    <input type="checkbox" name="check" id="pimienta">
+</div>
+<div>
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" id="password">
+</div>
+
+<div><label for="comentario">Comentario</label>
+<textarea name="comentario" id="comentario" cols="30" rows="10" readonly>Escribe aquí tu comentario</textarea></div>
+<div>
+    <label for="select">Selecciona</label>
+<select name="Selecciona" id="select" required>
+    <option value="agua">Agua</option>
+    <option value="refresco">Refresco</option>
+    <option value="refresco">Vino</option>
+</select>
+</div>
+    </div><button type="submit">Enviar</button>
+    </body>
+
+</html>
