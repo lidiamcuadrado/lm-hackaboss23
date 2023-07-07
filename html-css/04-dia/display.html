@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      .enlace {
+        list-style: none;
+        background-color: pink;
+        height: 100px;
+        display: inline;
+        padding: 1em;
+      }
+
+      .enlaces {
+        text-align: center;
+        padding: 0;
+      }
+
+      .ico {
+        font-size: 30px;
+      }
+
+      .enlace03 {
+        display: inline-block;
+      }
+
+      .enlace a {
+        color: white;
+      }
+
+      .bosque {
+        height: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ul>li*5>a[href="#"]{link $$} -->
+    <ul class="enlaces">
+      <!-- ¿Por qué los enlaces hasta el 3 no tienen separación? -->
+      <li class="enlace enlace01">
+        <a href="#">link 01 <span class="ico">✍🏼</span></a>
+      </li>
+      <li class="enlace enlace01">
+        <a href="#">Link 01.1 <span class="ico">😜</span> </a>
+      </li>
+      <li class="enlace enlace02"><a href="#">link 02</a></li>
+      <li class="enlace enlace03"><a href="#">link 03</a></li>
+      <li class="enlace enlace04"><a href="#">link 04</a></li>
+      <li class="enlace enlace05">
+        <a href="#"
+          >link 05 <img src="/assets/images/bosque.jpg" alt="" class="bosque"
+        /></a>
+      </li>
+    </ul>
+  </body>
+</html>

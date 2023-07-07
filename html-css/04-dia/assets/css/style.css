@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.ejemplo {
+  background-color: tomato;
+  border: 10px solid black;
+  border-bottom: 25px solid rgb(238, 104, 207);
+  height: 200px;
+  margin-bottom: 3em;
+  color: white;
+  padding: 1em;
+}
+
+.ejemplo2 {
+  background-color: cyan;
+  width: 33.3%;
+  aspect-ratio: 1/1;
+  padding: 1em;
+  float: left;
+  margin: 1em;
+  box-sizing: border-box;
+  border-radius: 25px;
+  overflow: scroll;
+  scroll-margin-top: 1em;
+}
+
+.ejemplo2::-webkit-scrollbar {
+  width: 0px;
+}
+
+.image {
+  width: 200px;
+  float: left;
+}
+
+.image-2 {
+  width: 200px;
+  float: left;
+  margin: 10px;
+}
+
+.clearfix {
+  clear: left;
+}
