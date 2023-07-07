@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      .position {
+        aspect-ratio: 16/9;
+        /* Square aspect ratio overrides position aspect ratio bc of order */
+        width: 20em;
+        /* position: static; Estática dentro del flujo del HTML
+         Las posiciones todas se pueden utilizar en base a otras propiedades, salvo static */
+        position: relative;
+        /* Relativo al flujo del HTML */
+      }
+
+      .square {
+        aspect-ratio: 1;
+        background-color: rgb(233, 105, 130);
+        width: 20em;
+      }
+
+      .bottom {
+        background-color: rgb(219, 197, 36, 0.5);
+        position: relative;
+        bottom: 150px;
+      }
+
+      .prueba {
+        position: relative;
+        bottom: 150px;
+      }
+
+      .absolute {
+        background-color: rgba(255, 140, 0, 0.75);
+        width: 20em;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* La posición absoluta es en relación al documento. Es absoluto dentro del documento, siempre y cuando no esté dentro de un elemento que tenga una posición static. Si no, va a ser absoluto dentro de ese elemento */
+        /* Se puede usar un elemento con ubicación absoluta dentro de un elemento con ubicación relativa */
+      }
+      .container {
+        position: absolute;
+        background-color: blue;
+        width: 20em;
+        aspect-ratio: 1;
+        top: 0;
+        bottom: 0;
+      }
+
+      .p {
+        position: relative;
+      }
+
+      .fija {
+        position: fixed;
+        background-color: blueviolet;
+        width: 20em;
+        aspect-ratio: 1;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square position"></div>
+    <div class="square bottom"></div>
+    <div class="absolute"></div>
+    <p class="prueba">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure ipsum
+      mollitia dolor sit explicabo voluptatem eos dolorum non! Itaque provident
+      eos qui est saepe, omnis corporis ipsa repudiandae iste.
+      <!-- <div class="container"></div> -->
+    </p>
+    <div class="container"></div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis,
+      suscipit modi itaque dolorem ut odio, minus odit rem labore cumque
+      voluptatem quaerat amet, doloribus quis quidem possimus doloremque
+      mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Dolorum odit reiciendis non, quia dolor necessitatibus ex incidunt
+      inventore animi aperiam assumenda harum, cumque ea iste deleniti commodi,
+      fugiat sint at. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Ad fugit libero accusamus, praesentium officia nulla aspernatur sit
+      molestiae voluptatem quam facere, tempore quasi voluptatibus voluptate
+      velit? Ea quibusdam sint maiores? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Magnam sequi voluptas error itaque temporibus quidem
+      sapiente. Culpa fugiat laudantium aspernatur corporis? Nobis consequatur
+      dolorum dolorem temporibus asperiores laudantium porro? Aperiam. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Dolores et ipsam alias
+      explicabo numquam tempora, voluptate earum dolore laboriosam dignissimos
+      nisi fugiat repellat excepturi corporis placeat tempore commodi recusandae
+      expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Reprehenderit eligendi temporibus ducimus optio recusandae tenetur sunt
+      debitis qui ab? Quam, explicabo expedita accusamus eligendi eius cum vero
+      tempore ratione nulla! Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Debitis ratione non, error nobis ut omnis fugiat illo? Hic facilis
+      corporis exercitationem adipisci, id eaque earum dignissimos, maxime
+      labore et odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Cumque dicta dolor nam beatae aliquid tempore saepe fugit odit quam
+      commodi, esse in, expedita molestias quo iste accusamus porro nesciunt ab!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi
+      esse soluta neque aliquam debitis aspernatur incidunt aperiam illo
+      temporibus, necessitatibus suscipit, quaerat reprehenderit vel! Nam earum
+      consequuntur eos libero?
+    </p>
+    <!-- Explícame por qué el div este "fijo" no sale por ninguna parte. SOS -->
+    <div class="fija"></div>
+  </body>
+</html>

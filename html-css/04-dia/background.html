@@ -15,9 +15,19 @@
       .cuadrado {
         background-image: url("assets/images/bosque.jpg");
         background-color: chartreuse;
-        background-size: 250px 250px;
+        background-size: 70% 70%;
+        background-position: center;
         height: 500px;
         width: 500px;
+        background-repeat: repeat-x;
+
+        /* Con menos líneas:
+         background:url ('.assets/images/bosque.jpg') no-repeat center 70% 70% chartreuse;
+         
+         Importa cómo podemos el tamaño y la posición. Por lo demás el orden no importa, p. ej.
+         
+         background:url ('.assets/images/bosque.jpg') no-repeat chartreuse center / 70% 70% no-repeat;
+         */
       }
     </style>
   </head>
