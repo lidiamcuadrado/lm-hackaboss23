@@ -1,0 +1,77 @@
+body {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.avatar {
+  max-width: 50px;
+  float: left;
+}
+
+.name {
+  max-width: 200px;
+  float: left;
+}
+
+body {
+  background-color: pink;
+}
+
+header {
+  background-color: white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
+
+header p {
+  line-height: 0.8px;
+}
+
+input {
+  display: none;
+}
+
+section > div {
+  display: none;
+}
+
+#radio-section-0:checked ~ #section-0 > div {
+  display: block;
+}
+
+#radio-section-1:checked ~ #section-1 > div {
+  display: block;
+}
+
+#radio-section-2:checked ~ #section-2 > div {
+  display: block;
+}
+
+#radio-section-3:checked ~ #section-3 > div {
+  display: block;
+}
+
+/* Princess Pink Palette: https://www.color-hex.com/color-palette/6658 */
+#section-0 {
+  background-color: #ff93ac;
+}
+#section-1 {
+  background-color: #ff6289;
+}
+
+#section-2 {
+  background-color: #fc3468;
+}
+
+#section-3 {
+  background-color: #ff084a;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cajas</title>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        background-color: dodgerblue;
+        gap: 5px;
+        text-align: center;
+        flex-wrap: nowrap;
+      }
+      div {
+        background-color: white;
+        color: dodgerblue;
+        aspect-ratio: 1;
+        font-size: 3em;
+        width: 150px;
+        /* height: 150px; */
+        /* flex-basis: 150px; */
+      }
+
+      .item05 {
+        flex-grow: 1;
+      }
+
+      .item06 {
+        flex-grow: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Los divs serán cajas flexibles. Significa que el ancho va a ser considerado siempre que haya espacio para 150px, si no, lo que deje. Por defecto, las cajas flexibles tienen la altura del elemento, porque técnicamente tienen espacio para crecer.-->
+    <div class="item item01">01</div>
+    <div class="item item02">02</div>
+    <div class="item item03">03</div>
+    <div class="item item04">04</div>
+    <div class="item item05">05</div>
+    <div class="item item06">06</div>
+    <div class="item item07">07</div>
+    <div class="item item08">08</div>
+    <div class="item item09">09</div>
+    <div class="item item10">10</div>
+  </body>
+</html>

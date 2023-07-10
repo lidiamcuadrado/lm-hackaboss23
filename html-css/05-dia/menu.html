@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios de Flexbox</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        background-color: dodgerblue;
+        color: white;
+        text-align: center;
+        font-size: 3em;
+        /* padding: 1.5em; */
+        /* Todo lo de abajo sustituye al padding:
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        El padding es algo más reponsivo. Lo que no gusta es que así tiene altura, y un elemento no debería tener altura. */
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      ul.navlinks {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        /* align-items: center; 
+        Esto lo alinea con base al eje cross que es el horizontal*/
+        /* justify-content: center; */
+        justify-content: space-evenly;
+        flex-direction: row;
+      }
+
+      .navlink {
+        list-style: none;
+        padding: 10px 12px;
+        background-color: deepskyblue;
+      }
+      .navlink a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .navlink:hover {
+        background-color: pink;
+      }
+
+      .card {
+        /* width: 300px; */
+        display: flex;
+        flex: 0 0 300px;
+        /* Que no crezca, que no se reduzca, y que tenga un flex-basis de 300. Esto es lo que significa la línea de arriba */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        overflow: hidden;
+        flex-direction: column;
+      }
+      .card .image {
+        flex: 0 0 300;
+      }
+      .card .image img {
+        width: 100%;
+        display: block;
+        /* Esto hace que la imagen sea lo más responsiva posible */
+      }
+
+      .card .content {
+        /* min-height: 300px; */
+        flex: 1 0 200px;
+        /* padding: 0.5em; */
+      }
+
+      .card .article-footer {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 0 0 50px;
+        padding-bottom: 5px;
+        /* padding-top: 5em; */
+      }
+      .content h3 {
+        margin: 2em;
+      }
+
+      .content p {
+        margin: 0.5em;
+        color: #aaa;
+      }
+      .card .activities {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 1em 0;
+        margin: 2em;
+      }
+      .card .btn {
+        background-color: dodgerblue;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 1.5em;
+      }
+
+      .card .btn:hover {
+        background-color: pink;
+      }
+
+      main {
+        display: flex;
+        gap: 3em;
+        margin: 2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Ejercicios Flexbox</header>
+    <nav>
+      <ul class="navlinks">
+        <li class="navlink"><a href="#">Link 01</a></li>
+        <li class="navlink"><a href="#">Link 02</a></li>
+        <li class="navlink"><a href="#">Link 03</a></li>
+        <li class="navlink"><a href="#">Link 04</a></li>
+        <li class="navlink"><a href="#">Link 05</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article class="card">
+        <section class="image">
+          <img src="https://picsum.photos/200/200" alt="Lorem Picsum" />
+        </section>
+
+        <section class="content">
+          <h3>Título del artículo</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            quia atque qui, facere, reiciendis doloremque assumenda debitis
+            perferendis illo autem, fugiat temporibus. Quidem, aspernatur
+            repellendus quaerat itaque delectus amet eius.
+          </p>
+          <ul class="activities">
+            <li>Aquí un tip</li>
+            <li>Aquí otro tip</li>
+          </ul>
+        </section>
+        <section class="article-footer">
+          <button class="btn">Comprar</button>
+          <p>250€</p>
+        </section>
+      </article>
+
+      <article class="card">
+        <section class="image">
+          <img src="https://picsum.photos/200/200" alt="Lorem Picsum" />
+        </section>
+        <section class="content">
+          <h3>Título del artículo</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            quia atque qui, facere, reiciendis doloremque assumenda debitis
+            perferendis illo autem, fugiat temporibus. Quidem, aspernatur
+            repellendus quaerat itaque delectus amet eius.
+          </p>
+          <ul class="activities">
+            <li>Aquí un tip</li>
+            <li>Aquí otro tip</li>
+          </ul>
+        </section>
+        <section class="article-footer">
+          <button class="btn">Comprar</button>
+          <p>250€</p>
+        </section>
+      </article>
+
+      <article class="card">
+        <section class="image">
+          <img src="https://picsum.photos/200/200" alt="Lorem Picsum" />
+        </section>
+        <section class="content">
+          <h3>Título del artículo</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            quia atque qui, facere, reiciendis doloremque assumenda debitis
+            perferendis illo autem, fugiat temporibus. Quidem, aspernatur
+            repellendus quaerat itaque delectus amet eius.
+          </p>
+          <ul class="activities">
+            <li>Aquí un tip</li>
+            <li>Aquí otro tip</li>
+          </ul>
+        </section>
+        <section class="article-footer">
+          <button class="btn">Comprar</button>
+          <p>250€</p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

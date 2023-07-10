@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  width: 500px;
+  aspect-ratio: 1;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 2em;
+  margin: auto;
+  justify-content: center; /*Alinea elementos también */
+  align-items: center; /* Alinea de elementos en el eje principal */
+  /* justify-content: flex-end; y justify-content: flex-start; */
+  text-align: center;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+.flex p {
+  margin: 0;
+  text-align: center;
+}
+.flex > p {
+  color: gold;
+}
+
+/* DUDA(!): No consigo alinear esta línea de texto hacia la izquierda */
+.item03 {
+  align-self: left;
+}
+
+/* .flex .item01 {
+  order: 1;
+}
+.flex .item02 {
+  order: 2;
+}
+.flex .item03 {
+  order: 3;
+}
+.flex .item04 {
+  order: 4;
+} */
