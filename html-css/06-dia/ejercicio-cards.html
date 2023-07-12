@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Cards</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #dcfffb;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      main {
+        margin: 3em 3em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5em;
+      }
+
+      .image img {
+        width: 100%;
+      }
+
+      .card {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+      }
+
+      .card .text,
+      .card .activities {
+        color: #aaa;
+      }
+
+      .card .activities {
+        border-top: 1px solid#ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 1em 1.5em;
+        /* El primer número (o los dos primeros) son hacia arriba y hacia abajo y el siguiente (o los dos siguientes) es hacia los lados */
+        margin-bottom: 0;
+      }
+
+      .content h3 {
+        color: #c1bbdd;
+        text-align: center;
+      }
+
+      .content .text {
+        /* padding: 0em 0em 0em 1em; */
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: justify;
+      }
+
+      .btn {
+        background-color: #ffdcf4;
+        border: none;
+        border-radius: 10px;
+        padding: 0 1.5em;
+        color: white;
+        font-size: 1.5em;
+      }
+      .btn:hover {
+        background-color: #dabfde;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1em;
+      }
+
+      .footer .price {
+        font-size: 2em;
+        margin: 0;
+        color: #caf2c2;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <section class="image">
+          <img src="https://picsum.photos/id/237/600/600" alt="" />
+        </section>
+        <section class="content">
+          <h3>Montañas de la muerte</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <ul class="activities">
+            <li>Ascenso a la montaña</li>
+            <li>Excursiones al cerro</li>
+            <li>Kajak</li>
+          </ul>
+        </section>
+        <section class="footer">
+          <button class="btn">Comprar</button>
+          <p class="price">250€</p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="image">
+          <img src="https://picsum.photos/id/235/600/600" alt="" />
+        </section>
+        <section class="content">
+          <h3>Montañas de la muerte</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <ul class="activities">
+            <li>Ascenso a la montaña</li>
+            <li>Excursiones al cerro</li>
+            <li>Kajak</li>
+          </ul>
+        </section>
+        <section class="footer">
+          <button class="btn">Comprar</button>
+          <p class="price">250€</p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="image">
+          <img src="https://picsum.photos/id/238/600/600" alt="" />
+        </section>
+        <section class="content">
+          <h3>Montañas de la muerte</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <ul class="activities">
+            <li>Ascenso a la montaña</li>
+            <li>Excursiones al cerro</li>
+            <li>Kajak</li>
+          </ul>
+        </section>
+        <section class="footer">
+          <button class="btn">Comprar</button>
+          <p class="price">250€</p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="image">
+          <img src="https://picsum.photos/id/233/600/600" alt="" />
+        </section>
+        <section class="content">
+          <h3>Montañas de la muerte</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <ul class="activities">
+            <li>Ascenso a la montaña</li>
+            <li>Excursiones al cerro</li>
+            <li>Kajak</li>
+          </ul>
+        </section>
+        <section class="footer">
+          <button class="btn">Comprar</button>
+          <p class="price">250€</p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

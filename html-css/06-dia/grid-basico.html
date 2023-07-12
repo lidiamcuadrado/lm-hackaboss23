@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        display: grid;
+        /* Transforma el elemento en un contenedor grid */
+        /* grid-template-columns: repeat(2, 150px); */
+        /* grid-template-rows: 150px; */
+        /* grid-auto-rows: 150px; */
+        /* grid-auto-columns: 150px; */
+        /* Normalmente se utilizan las filas automáticas y no las columnas. Generalmente uno sabe cuántas columnas va a utilizar */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* ¿Diferencia entre auto-fill y auto-fit?
+        El auto-fit rellena todo el espacio con los elementos que existan. 
+        El auto-fill guarda espacio para futuros elementos */
+        grid-auto-rows: 150px;
+        gap: 5px;
+      }
+
+      .grid-item {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <div class="container">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+  <body></body>
+</html>

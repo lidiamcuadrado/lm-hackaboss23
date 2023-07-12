@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Debrable</title>
+  </head>
+  <body>
+    <header>
+      <h1>Debrable</h1>
+      <nav>
+        <ul>
+          <li><a href="#top10">Mi TOP 10 películas</a></li>
+          <li><a href="#viaje">Mi viaje a Japón</a></li>
+          <li><a href="#mensaje">Mándame un mensaje</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="top10" id="top10">
+        <h2>Mi TOP 10 películas</h2>
+        <ol>
+          <li>El padrino</li>
+          <li>La lista de Schindler</li>
+          <li>El padrino. Parte II</li>
+          <li>Cadena perpetua</li>
+          <li>Pulp Fiction</li>
+          <li>El Rey León</li>
+          <li>Forrest Gump</li>
+          <li>La vida es bella</li>
+          <li>Gladiador</li>
+          <li>Coco</li>
+        </ol>
+      </section>
+      <article class="viaje" id="viaje">
+        <h2>Mi viaje a Japón</h2>
+        <img src="https://picsum.photos/200" alt="Foto de Japón" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          maiores tempore pariatur blanditiis aut voluptates tempora sed non
+          quos dolor, sint atque inventore rem rerum saepe sit maxime illo
+          temporibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod
+          vitae laudantium quos iure nisi pariatur vero provident recusandae
+          veritatis quae repellendus, corrupti est. Illo accusamus cupiditate
+          adipisci eaque ratione.
+        </p>
+      </article>
+    </main>
+    <aside>
+      <img src="https://picsum.photos/200" alt="Foto Debra" />
+      <h2>Debra Smith</h2>
+      <p>Aquí escribo todo lo que se me ocurre.</p>
+      <p>
+        <a href="mailto:debra.smith@example.com">debra.smith@example.com</a>
+      </p>
+    </aside>
+    <footer id="mensaje">
+      <h2>Mándame un mensaje</h2>
+      <form action="debra.smith@example.com">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+        <label for="correo">Email:</label>
+        <input type="text" id="correo" />
+        <label for="cumple">Fecha de nacimiento:</label>
+        <input type="date" id="cumple" />
+        <label for="comentarios">Comentarios:</label>
+        <textarea
+          name="comments"
+          id="comentarios"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="checkbox" id="subscribe" /><label for="checkbox"
+          >Suscribirse a newsletter</label
+        >
+        <button id="enviar" type="submit">Enviar</button>
+      </form>
+    </footer>
+  </body>
+</html>

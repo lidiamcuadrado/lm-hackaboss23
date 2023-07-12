@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      body {
+        background-color: crimson;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 100px 400px 100px;
+        grid-template-areas:
+          "header header header header"
+          "main main main aside"
+          "footer footer footer footer";
+      }
+
+      header {
+        background-color: aquamarine;
+        grid-area: header;
+      }
+
+      main {
+        background-color: darkcyan;
+        grid-area: main;
+      }
+
+      aside {
+        background-color: lightyellow;
+        grid-area: aside;
+      }
+
+      footer {
+        background-color: orange;
+        grid-area: footer;
+      }
+
+      .opcion {
+        display: none;
+        color: white;
+        font-size: 2em;
+      }
+
+      @media screen and (max-width: 800px) {
+        body {
+          grid-template-rows: 100px 400px 200px 100px;
+          grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+      }
+
+      @media (min-width: 1000px) {
+        .opcion {
+          display: block;
+        }
+      }
+      /* @media print {
+        body {
+          background-color: black;
+          color: white;
+        }
+      } */
+      /*  @media (min-width: 800px) {
+        body {
+          background-color: greenyellow;
+        }
+      }
+
+      @media es cualquier elemento que despliegue las características del (), por ejemplo en este caso cualquier elemento mayor a 800px. Si achico la pantalla, en cuanto llegue a menos de 800px cambiará el color
+      */
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="opcion">
+        <p>Esto solo se verá en un ordenador de escritorio</p>
+      </div>
+    </main>
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>

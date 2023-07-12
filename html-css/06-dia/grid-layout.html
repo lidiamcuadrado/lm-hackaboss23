@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Layout</title>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px 400px 100px;
+        grid-template-areas:
+          "cabecera cabecera cabecera cabecera"
+          "principal principal principal contexto"
+          "pie pie pie pie";
+      }
+      header {
+        background-color: aqua;
+        grid-area: cabecera;
+      }
+      main {
+        background-color: blue;
+        grid-area: principal;
+      }
+      aside {
+        background-color: chocolate;
+        grid-area: contexto;
+      }
+      footer {
+        background-color: darkorchid;
+        grid-area: pie;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>
