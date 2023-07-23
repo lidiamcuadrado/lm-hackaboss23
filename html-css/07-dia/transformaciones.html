@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformaciones CSS</title>
+    <style>
+      .square {
+        aspect-ratio: 1;
+        background-color: dodgerblue;
+        width: 300px;
+        transform: translate(200px, 200px) rotate(45deg);
+        /* Translate es varios valores en conjunto
+        translate-x, translate-z especifica solo uno de los ejes. Esto puede servir, por ejemplo, conm animaciones: Mientras se hace una translación en varios ejes, solo se quiere modificar uno de ellos. */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+  </body>
+</html>

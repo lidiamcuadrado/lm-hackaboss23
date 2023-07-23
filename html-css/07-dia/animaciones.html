@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformaciones CSS</title>
+    <style>
+      .square {
+        aspect-ratio: 1;
+        background-color: dodgerblue;
+        width: 300px;
+        animation-name: crazymoves;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        /* animation-delay:1s; */
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        /* animation-fill-mode es cuando termina cómo se va a rellenar el contenido
+        - forwards: se queda en el último fotograma, en el último keyframe
+        -backwards: una vez que se anime, se queda a la posición de salida
+        - none: valor por defecto*/
+        animation-fill-mode: none;
+        /* opacity:0;
+        opacity:0; hace que el elemento se deje de ver ya que le hemos puesto opacity:0; al inicio del os keyframes. Si no, en cuanto termine de animarse el elemento se seguirá viendo */
+        position: absolute;
+        /* Por defecto tiene position static, si queremos que se mueva tiene que ser position:absolute; */
+      }
+
+      /* Keyframes hace referencia a los fotogramas clave dentro de una animación */
+      @keyframes slide {
+        from {
+          transform: translateX(0);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(300px);
+          opacity: 1;
+        }
+      }
+
+      @keyframes crazymoves {
+        0% {
+          top: 0;
+          left: 0;
+          transform: rotate(0);
+        }
+        25% {
+          top: 100px;
+          left: 100px;
+          transform: rotate(180deg);
+        }
+        75% {
+          top: 300px;
+          left: 300px;
+          transform: rotate(270deg);
+        }
+        100% {
+          top: 0;
+          left: 0;
+          transform: rotate(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+  </body>
+</html>
