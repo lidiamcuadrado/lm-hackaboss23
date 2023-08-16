@@ -1,0 +1,7 @@
+- Guardar siempre antes de hacer cosas en la terminal para asegurarnos de que funciona
+- Cristóbal añade la línea standard en el json
+- Para crear el package json en terminal de la carpeta del proyecto: npm init -y
+- Instalar las cosas: npm i express cors mysql2
+- En este caso estamos utilizando Sequelize (añadimos al npm i sequelize sqlite3)
+- Siempre necesitaremos express para las conexiones con el servidor, cors para un fallo que da al conectarte (evita que se ejecuten scripts externos no deseados), mysql poruque siempre se necesita una base de datos...
+- en package-lock el sombrerito ^ antes de una versión hace que cuando haya una nueva la actualice (de 3.6 a 3.7, pero no a 4., por ejemplo). Dependiendeo del proyecto es mejor quitarlo porque a lo mejor no soporta futuras versiones

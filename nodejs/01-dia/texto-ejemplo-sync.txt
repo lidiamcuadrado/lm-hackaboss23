@@ -1,0 +1,2 @@
+Hola Mundo Síncrono
+Esto es otra línea de texto
